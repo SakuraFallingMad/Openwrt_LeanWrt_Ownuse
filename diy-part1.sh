@@ -16,3 +16,31 @@
 # Add a feed source
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+
+# Add prepareCompile
+disablePkgsList="
+./feeds/kenzo/luci-app-argon-config
+./feeds/kenzo/luci-theme-argon
+./feeds/luci/applications/luci-app-softethervpn
+./feeds/luci/themes/luci-theme-argon
+./feeds/packages/net/adguardhome
+"
+
+function disableDulicatedPkg()
+{
+	if [ -d $1 ];then
+		rm -rf $1
+		echo $1" Disabled."
+	fi
+}
+
+git pull
+./scripts/feeds update -a
+
+for disablePkg in $disablePkgsList
+do
+	disableDulicatedPkg $disablePkg
+done
+
+./scripts/feeds update -i
+./scripts/feeds install -a
