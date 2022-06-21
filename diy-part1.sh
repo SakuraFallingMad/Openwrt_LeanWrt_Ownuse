@@ -19,12 +19,16 @@
 
 # Add prepareCompile
 disablePkgsList="
-./feeds/kenzo/luci-app-argonne-config
-./feeds/kenzo/luci-theme-argonne
 ./feeds/luci/applications/luci-app-softethervpn
 ./feeds/luci/themes/luci-theme-argon
 ./feeds/packages/net/adguardhome
 ./feeds/packages/net/mosdns
+./feeds/small8/diy
+./feeds/small8/luci-app-argon-config
+./feeds/small8/luci-theme-argon
+./feeds/small8/mbedtls
+./feeds/small8/my-default-settings
+./feeds/small8/vsftpd-alt
 "
 
 function disableDulicatedPkg()
