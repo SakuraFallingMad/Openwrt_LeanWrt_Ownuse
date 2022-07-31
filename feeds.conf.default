@@ -2,6 +2,4 @@ src-git packages https://github.com/coolsnowwolf/packages.git;master
 src-git luci https://github.com/coolsnowwolf/luci.git;master
 src-git routing https://github.com/coolsnowwolf/routing.git;main
 src-git telephony https://git.openwrt.org/feed/telephony.git
-src-git lienol https://github.com/Lienol/openwrt-package.git;main
-src-git small https://github.com/kenzok8/small.git;master
-src-git kenzo https://github.com/kenzok8/openwrt-packages.git;master
+src-git small8 https://github.com/kenzok8/small-package.git;main
