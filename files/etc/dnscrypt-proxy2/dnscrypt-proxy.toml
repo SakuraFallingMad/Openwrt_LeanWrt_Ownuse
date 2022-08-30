@@ -97,6 +97,13 @@ disabled_server_names = []
 force_tcp = false
 
 
+## Enable support for HTTP/3 (DoH3, HTTP over QUIC)
+## Note that, like DNSCrypt but unlike other HTTP versions, this uses
+## UDP and (usually) port 443 instead of TCP.
+
+http3 = true
+
+
 ## SOCKS proxy
 ## Uncomment the following line to route all TCP connections to a local Tor node
 ## Tor doesn't support UDP, so set `force_tcp` to `true` as well.
@@ -118,7 +125,7 @@ force_tcp = false
 timeout = 5000
 
 
-## Keepalive for HTTP (HTTPS, HTTP/2) queries, in seconds
+## Keepalive for HTTP (HTTPS, HTTP/2, HTTP/3) queries, in seconds
 
 keepalive = 30
 
@@ -588,7 +595,7 @@ blocked_ips_file = 'blocked-ips.txt'
 #########################################################
 
 ## Allowed IP lists support the same patterns as IP blocklists
-## If an IP response matches an allow ip entry, the corresponding session
+## If an IP response matches an allowed entry, the corresponding session
 ## will bypass IP filters.
 ##
 ## Time-based rules are also supported to make some websites only accessible at specific times of the day.
