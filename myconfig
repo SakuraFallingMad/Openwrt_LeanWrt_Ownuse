@@ -96,6 +96,7 @@ CONFIG_DEFAULT_kmod-amd-xgbe=y
 CONFIG_DEFAULT_kmod-bnx2=y
 CONFIG_DEFAULT_kmod-bnx2x=y
 CONFIG_DEFAULT_kmod-button-hotplug=y
+CONFIG_DEFAULT_kmod-drm-amdgpu=y
 CONFIG_DEFAULT_kmod-drm-i915=y
 CONFIG_DEFAULT_kmod-e1000=y
 CONFIG_DEFAULT_kmod-e1000e=y
@@ -104,7 +105,6 @@ CONFIG_DEFAULT_kmod-fs-f2fs=y
 CONFIG_DEFAULT_kmod-fs-vfat=y
 CONFIG_DEFAULT_kmod-i40e=y
 CONFIG_DEFAULT_kmod-i40evf=y
-CONFIG_DEFAULT_kmod-i915-gvt=y
 CONFIG_DEFAULT_kmod-iavf=y
 CONFIG_DEFAULT_kmod-igb=y
 CONFIG_DEFAULT_kmod-igbvf=y
@@ -2849,6 +2849,7 @@ CONFIG_PACKAGE_kmod-backlight=y
 # CONFIG_PACKAGE_kmod-backlight-pwm is not set
 CONFIG_PACKAGE_kmod-drm=y
 CONFIG_PACKAGE_kmod-drm-amdgpu=y
+CONFIG_PACKAGE_kmod-drm-i915=y
 CONFIG_PACKAGE_kmod-drm-kms-helper=y
 # CONFIG_PACKAGE_kmod-drm-nouveau is not set
 CONFIG_PACKAGE_kmod-drm-radeon=y
@@ -2863,7 +2864,6 @@ CONFIG_PACKAGE_kmod-fb-sys-ram=y
 # CONFIG_PACKAGE_kmod-fb-tft-ili9486 is not set
 # CONFIG_PACKAGE_kmod-multimedia-input is not set
 # CONFIG_PACKAGE_kmod-video-core is not set
-CONFIG_PACKAGE_kmod-drm-i915=y
 # end of Video Support
 
 #
