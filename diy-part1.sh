@@ -29,6 +29,7 @@ disablePkgsList="
 ./feeds/small8/mbedtls
 ./feeds/small8/my-default-settings
 ./feeds/small8/vsftpd-alt
+./feeds/small8/openwrt-app-actions
 "
 
 function disableDulicatedPkg()
